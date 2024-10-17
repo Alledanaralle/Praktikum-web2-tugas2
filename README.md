@@ -43,7 +43,7 @@ class Database
 ```
 
 Langkah-langkah:
-1. Sesuaikan nilai `$host`, `$db_name`, `$user`, dan `$pass` dengan konfigurasi database Anda.
+1. Sesuaikan nilai `$host`, `$db_name`, `$user`, dan `$pass` dengan konfigurasi database.
 2. Gunakan metode `getConnection()` untuk mendapatkan koneksi database di file lain.
 
 ### backend/permohonanizin.php
@@ -121,8 +121,8 @@ class Dosen extends User
 ```
 
 Langkah-langkah:
-1. Buat tabel `permohonan_izin` di database Anda dengan kolom yang sesuai.
-2. Implementasikan metode CRUD tambahan di kelas `PermohonanIzin` jika diperlukan.
+1. Buat tabel `permohonan_izin` di database dengan kolom yang sesuai.
+2. Implementasikan metode CRUD tambahan di kelas `PermohonanIzin`.
 3. Gunakan kelas `PermohonanIzinDetail` untuk operasi khusus pada satu permohonan izin.
 
 ### backend/surattugas.php
@@ -175,8 +175,8 @@ class SuratTugasDetail extends SuratTugas
 ```
 
 Langkah-langkah:
-1. Buat tabel `surat_tugas` di database Anda dengan kolom yang sesuai.
-2. Implementasikan metode CRUD tambahan di kelas `SuratTugas` jika diperlukan.
+1. Buat tabel `surat_tugas` di database dengan kolom yang sesuai.
+2. Implementasikan metode CRUD tambahan di kelas `SuratTugas`.
 3. Gunakan kelas `SuratTugasDetail` untuk operasi khusus pada satu surat tugas.
 
 ### frontend/permohonanizin/index.php
