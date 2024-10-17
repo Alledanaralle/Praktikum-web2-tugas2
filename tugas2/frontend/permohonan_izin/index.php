@@ -13,7 +13,7 @@
 
 <body style="font-family: 'poppins', sans-serif;">
     <div class="container mt-5">
-        <h2>Daftar Permohonan Izin</h2>
+        <h2>Daftar Permohonan Izin (Admin)</h2>
         <table class="table table-bordered table-striped">
             <thead>
                 <tr>
@@ -54,24 +54,12 @@
                     echo "<tr><td colspan='8'>No data found.</td></tr>";
                 }
                 echo "
-                <div class='d-flex gap-2'>
-                <button id='dosenBtn' class='btn btn-primary mb-3'>{$dosen->getPermissions()}</button>
-                <button id='adminBtn' class='btn btn-primary mb-3'>{$admin->getPermissions()}</button>
-                </div>";
+                <button class='btn btn-primary mb-3'><a class='text-white' style='text-decoration: none;' href='index2.php'>{$dosen->getPermissions()}</a></button>";
                 ?>
             </tbody>
         </table>
         <a class="btn btn-danger mt-3" href="./../../../tugas2/index.php">Menu</a>
     </div>
-    <script>
-        document.getElementById('dosenBtn').addEventListener('click', function() {
-            alert('Masuk ke mode Dosen!');
-        });
-
-        document.getElementById('adminBtn').addEventListener('click', function() {
-            alert('Masuk ke mode Admin!');
-        });
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
